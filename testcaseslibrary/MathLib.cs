@@ -18,7 +18,12 @@ namespace testcaseslibrary
 
         public int Factorial(int i)
         {
-            return i!;
+            var fact = 1;
+            while (i > 1)
+            {
+                fact *= i--;
+            }
+            return fact;
             throw new NotImplementedException();
         }
 
